@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct knoten_struct
+struct node_struct
 {
-    struct knoten_struct *vaterknoten;
-    int wert;
-    struct knoten_struct *links, *rechts;
+    struct knoten_struct *parent;
+    int value;
+    struct node_struct *left, *right;
 };
 
-typedef knoten_struct Knoten;
+typedef struct node_struct Node;
 
 void traverse_preorder()
 {
@@ -17,7 +17,9 @@ void traverse_preorder()
 
 int main()
 {
+    puts("[Traverse trees with this program]");
 
+    puts("Exiting..");
 
     return EXIT_SUCCESS;
 }
