@@ -142,7 +142,7 @@ void main (void)
 
         // Das Ergebnis x auf dem Stack pushen.
 		if (x != 0) push (x);
-	}    
+	}
 
     // Das Ergebnis auf der Konsole ausgeben, indem man es vom Stack holt.
 	printf ("%d\n", pop());
